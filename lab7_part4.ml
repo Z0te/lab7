@@ -65,19 +65,22 @@ module Stack : STACK =
   struct
     exception EmptyStack
 
-    type 'a stack = 'a      (* replace this with the correct 
+    type 'a stack = 'a list    (* replace this with the correct 
                                implementation type *)
 
     (* empty -- An empty stack *)
-    let empty : 'a stack = failwith "not implemented"
+    let empty : 'a stack = []
 
     (* push i s -- Adds an element i to the top of stack s *)
-    let push (i : 'a) (s : 'a stack) : 'a stack = failwith "not implemented"
+    let push (i : 'a) (s : 'a stack) : 'a stack = i :: s
 
     (* pop_helper s -- Returns a pair of the front element of the
        stack and a stack containing the remaining elements *)
     let pop_helper (s : 'a stack) : ('a * 'a stack) =
-      failwith "not implemented"
+      match s with
+      | [] -> raise EmptyStack
+      | h :: t -> (h, t)
+
     let top (s: 'a stack) : 'a =
       fst (pop_helper s)
           
@@ -91,7 +94,12 @@ your Stack module to return a new stack with the following strings
 pushed in order: "Computer", "Science", "51".
 ......................................................................*)
 
-let s = fun _ -> failwith "not implemented" ;;
+let s () =
+  let open Stack in
+  empty
+  |> push "Computer"
+  |> push "Science"
+  |> push "51" ;;
 
 (*......................................................................
 Exercise 4C: Write an expression to generate a stack with the s
@@ -99,4 +107,4 @@ function, above, and pull the top element from it, naming the result
 top_el.
 ......................................................................*)
 
-let top_el : string = "replace me with an expression using the Stack module" ;;
+let top_el : string = Stack.top (s ()) ;;
