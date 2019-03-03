@@ -16,7 +16,7 @@ files to complete all exercises:
    lab7_part4.ml -- Part 4: Polymorphic abstract types
 
  *)
- module Color = Color ;;
+
 
 (*======================================================================
 Part 2: Files as modules
@@ -70,6 +70,8 @@ below.
 Exercise 2A: Extract the red channel of the color named Red, naming
 the result "red_channel".
 ......................................................................*)
+
+module Color = Color ;;
 
 let red_channel : int = Color.red (Color.color_named Color.Red) ;;
 
