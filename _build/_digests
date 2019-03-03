@@ -1,0 +1,7 @@
+"Resource: /home/chend/Documents/Code/CS51/lab7/color.mli": "\163%\213\001[\0152\251\202\002\247\161\201\174R\163"
+"Resource: /home/chend/Documents/Code/CS51/lab7/color.ml": "R]}\143\169\236!\210M\022j\200`l\172\158"
+"Rule: ocaml dependencies ml (%=color )": "_d)\251HL\024\007\206\r\185\2124\242\242>"
+"Rule: ocaml: mli -> cmi (%=color )": "\015T\249\245+\166\172\178\1662\153\179a\005_\022"
+"Rule: ocaml dependencies mli (%=color )": "\2316\142y+\194\238\022\016\137\153\021\181\202^\137"
+"Rule: ocaml: cmo* -> byte (%=color )": "\132\221\182\214\207\017\240@W\203\188%\209\129\205\216"
+"Rule: ocaml: ml & cmi -> cmo (%=color )": "\183R\169R\141f\216\243\221\015\151\004\147%\224\150"
