@@ -16,7 +16,7 @@ files to complete all exercises:
    lab7_part4.ml -- Part 4: Polymorphic abstract types
 
  *)
- module Color = Color_soln ;;
+ module Color = Color ;;
 
 (*======================================================================
 Part 2: Files as modules
